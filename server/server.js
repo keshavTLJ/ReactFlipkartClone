@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static('public'));  //express static is the middleware to serve the static files i.e the client side 
+app.use(express.static('dist'));  //express static is the middleware to serve the static files i.e the client side 
 dotenv.config({ path: 'server/.env' });
 const PORT = process.env.PORT || 3000;
 
